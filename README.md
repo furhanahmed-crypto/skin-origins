@@ -40,7 +40,7 @@ storage/         Contact form log (*.log gitignored)
 
 ## Contact form
 
-`contact.php` validates submissions, appends JSON lines to `storage/contact-submissions.log`, and attempts `mail()` when the host supports it.
+Contact and consultation forms post to `thank-you.php` and show a confirmation page. No email, logging, or API is used.
 
 ## Roadmap
 

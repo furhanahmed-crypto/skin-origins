@@ -27,8 +27,7 @@ declare(strict_types=1);
             class="consult-modal__form"
             id="consultModalForm"
             method="post"
-            action="<?= so_e(so_url('/lead.php')) ?>"
-            novalidate
+            action="<?= so_e(so_url('/thank-you.php')) ?>"
         >
             <div class="consult-modal__field">
                 <label for="consult-name">Full Name</label>
@@ -65,8 +64,6 @@ declare(strict_types=1);
                     placeholder=" "
                 >
             </div>
-
-            <p class="consult-modal__status" id="consultModalStatus" role="alert" hidden></p>
 
             <button class="consult-modal__submit" type="submit">
                 Book Appointment <span aria-hidden="true">→</span>

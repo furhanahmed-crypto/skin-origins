@@ -8,74 +8,6 @@ $so_page = 'contact';
 $pageTitle = 'Contact Us';
 $pageDescription = 'Get in touch with Skin Origins Clinic, Jubilee Hills, Hyderabad. Call +91 90006 00177 or send us a message.';
 
-$formStatus = null;
-$formMessage = '';
-$old = [
-    'name' => '',
-    'email' => '',
-    'phone' => '',
-    'service' => '',
-    'message' => '',
-];
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $old['name'] = trim((string) ($_POST['name'] ?? ''));
-    $old['email'] = trim((string) ($_POST['email'] ?? ''));
-    $old['phone'] = trim((string) ($_POST['phone'] ?? ''));
-    $old['service'] = trim((string) ($_POST['service'] ?? ''));
-    $old['message'] = trim((string) ($_POST['message'] ?? ''));
-
-    $errors = [];
-    if ($old['name'] === '' || strlen($old['name']) < 2) {
-        $errors[] = 'Please enter your full name.';
-    }
-    if (!filter_var($old['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors[] = 'Please enter a valid email address.';
-    }
-    $digits = preg_replace('/\D+/', '', $old['phone']) ?? '';
-    if ($old['phone'] === '' || strlen($digits) < 10) {
-        $errors[] = 'Please enter a valid phone number.';
-    }
-    if ($old['message'] === '' || strlen($old['message']) < 10) {
-        $errors[] = 'Please share a short message (at least 10 characters).';
-    }
-
-    if ($errors !== []) {
-        $formStatus = 'error';
-        $formMessage = implode(' ', $errors);
-    } else {
-        // Persist locally for deployments without mail transport.
-        $logDir = SO_ROOT . '/storage';
-        if (!is_dir($logDir)) {
-            @mkdir($logDir, 0755, true);
-        }
-        $entry = [
-            'received_at' => date('c'),
-            'name' => $old['name'],
-            'email' => $old['email'],
-            'phone' => $old['phone'],
-            'service' => $old['service'],
-            'message' => $old['message'],
-            'ip' => $_SERVER['REMOTE_ADDR'] ?? '',
-        ];
-        @file_put_contents(
-            $logDir . '/contact-submissions.log',
-            json_encode($entry, JSON_UNESCAPED_UNICODE) . PHP_EOL,
-            FILE_APPEND | LOCK_EX
-        );
-
-        // Best-effort email when the host supports it.
-        $subject = 'New consultation request — Skin Origins';
-        $body = "Name: {$old['name']}\nEmail: {$old['email']}\nPhone: {$old['phone']}\nService: {$old['service']}\n\nMessage:\n{$old['message']}\n";
-        $headers = 'From: ' . SO_SITE['email'] . "\r\n" . 'Reply-To: ' . $old['email'] . "\r\n";
-        @mail(SO_SITE['email'], $subject, $body, $headers);
-
-        $formStatus = 'success';
-        $formMessage = 'Thank you. Your message has been received — our team will get back to you within 24 hours.';
-        $old = ['name' => '', 'email' => '', 'phone' => '', 'service' => '', 'message' => ''];
-    }
-}
-
 $mapQuery = rawurlencode('Skin Origins Plot No 245 Road Number 78 Phase 3 Jubilee Hills Hyderabad 500034');
 
 require SO_INCLUDES . '/header.php';
@@ -143,40 +75,34 @@ require SO_INCLUDES . '/header.php';
 
         <div>
             <span class="page-label">Send Us a Message</span>
-            <form class="contact-form" method="post" action="<?= so_e(so_url('/contact.php')) ?>" novalidate>
+            <form class="contact-form" method="post" action="<?= so_e(so_url('/thank-you.php')) ?>">
                 <h2>Let's Start a Conversation</h2>
                 <p>Fill out the form below and our team will get back to you within 24 hours.</p>
-
-                <?php if ($formStatus !== null): ?>
-                    <div class="form-status is-<?= so_e($formStatus) ?>" role="alert">
-                        <?= so_e($formMessage) ?>
-                    </div>
-                <?php endif; ?>
 
                 <div class="form-row form-row--2">
                     <div class="form-field">
                         <label for="name">Full Name</label>
-                        <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name" value="<?= so_e($old['name']) ?>">
+                        <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name">
                     </div>
                     <div class="form-field">
                         <label for="email">Email Address</label>
-                        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@email.com" value="<?= so_e($old['email']) ?>">
+                        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@email.com">
                     </div>
                 </div>
 
                 <div class="form-row form-row--2">
                     <div class="form-field">
                         <label for="phone">Phone Number</label>
-                        <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+91 XXXXX XXXXX" value="<?= so_e($old['phone']) ?>">
+                        <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+91 XXXXX XXXXX">
                     </div>
                     <div class="form-field">
                         <label for="service">Service Interest</label>
                         <select id="service" name="service">
-                            <option value="" <?= $old['service'] === '' ? ' selected' : '' ?>>Select a service</option>
-                            <option value="Skin" <?= $old['service'] === 'Skin' ? ' selected' : '' ?>>Skin</option>
-                            <option value="Hair" <?= $old['service'] === 'Hair' ? ' selected' : '' ?>>Hair</option>
-                            <option value="Wellness" <?= $old['service'] === 'Wellness' ? ' selected' : '' ?>>Wellness</option>
-                            <option value="General" <?= $old['service'] === 'General' ? ' selected' : '' ?>>General Consultation</option>
+                            <option value="" selected>Select a service</option>
+                            <option value="Skin">Skin</option>
+                            <option value="Hair">Hair</option>
+                            <option value="Wellness">Wellness</option>
+                            <option value="General">General Consultation</option>
                         </select>
                     </div>
                 </div>
@@ -184,7 +110,7 @@ require SO_INCLUDES . '/header.php';
                 <div class="form-row">
                     <div class="form-field">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" required placeholder="Tell us about your inquiry..."><?= so_e($old['message']) ?></textarea>
+                        <textarea id="message" name="message" required placeholder="Tell us about your inquiry..."></textarea>
                     </div>
                 </div>
 
