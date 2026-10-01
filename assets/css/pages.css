@@ -1356,6 +1356,7 @@
   display: grid;
   gap: 2.5rem;
   align-items: start;
+  min-width: 0;
 }
 
 @media (min-width: 1000px) {
@@ -1367,6 +1368,7 @@
 
 .blog-article__content {
   max-width: 44rem;
+  min-width: 0; /* allow table wrappers to scroll inside grid layouts */
 }
 
 .blog-article__content > h2 {
@@ -1399,8 +1401,13 @@
 }
 
 .blog-table-wrap {
+  display: block;
   width: 100%;
+  max-width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
   margin: 1.5rem 0 1.75rem;
   border: 1px solid rgba(117, 112, 86, 0.2);
   border-radius: 14px;
@@ -1408,8 +1415,8 @@
 }
 
 .blog-table {
-  width: 100%;
-  min-width: 520px;
+  width: max-content;
+  min-width: 100%;
   border-collapse: collapse;
 }
 
@@ -1421,6 +1428,7 @@
   line-height: 1.45;
   border-bottom: 1px solid rgba(117, 112, 86, 0.16);
   vertical-align: top;
+  white-space: nowrap;
 }
 
 .blog-table th {
