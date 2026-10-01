@@ -1,20 +1,33 @@
-# Skin Origins — pretty URLs matching live SEO paths
+# Skin Origins — Apache pretty URLs (Hostinger / shared hosting)
+# Mirrors router.php: /blog/{slug}/, /blogs/, /skin|hair|wellness/{slug}/
+
+Options -MultiViews
+DirectoryIndex index.php
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # If the site lives in a subdirectory, change this (e.g. RewriteBase /skin-origins/)
   RewriteBase /
 
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
+  # Real files (assets, *.php) — serve as-is
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
-  # Service treatment details
-  RewriteRule ^(skin|hair|wellness)/([^/]+)/?$ $1/index.php [L,QSA]
-
-  # Blog details
+  # Blog detail: /blog/{slug}/  (must run BEFORE the blog/ directory short-circuit)
   RewriteRule ^blog/([^/]+)/?$ blog/index.php [L,QSA]
 
-  # Blog listing
+  # Blog listing: /blogs/
   RewriteRule ^blogs/?$ blogs/index.php [L,QSA]
+
+  # Service category + treatment: /skin/, /skin/{slug}/, etc.
+  RewriteRule ^(skin|hair|wellness)/([^/]+)/?$ $1/index.php [L,QSA]
+  RewriteRule ^(skin|hair|wellness)/?$ $1/index.php [L,QSA]
 </IfModule>
 
-DirectoryIndex index.php
+# Deny direct access to logs
+<IfModule mod_authz_core.c>
+  <FilesMatch "\.(log|md)$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
