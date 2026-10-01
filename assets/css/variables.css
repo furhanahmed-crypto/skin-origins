@@ -1,0 +1,123 @@
+/**
+ * Skin Origins Clinic — Design Tokens
+ * Extracted from https://skinoriginsclinic.com/ for pixel-perfect replica
+ */
+
+:root {
+  /* ── Brand Colors ── */
+  --color-cream: #ebe1ca;
+  --color-cream-light: #f1e6d0;
+  --color-cream-soft: #f0e7d6;
+  --color-terracotta: #a84720;
+  --color-terracotta-dark: #923b1f;
+  --color-gold: #a0976c;
+  --color-olive: #757056;
+  --color-dark: #2d2418;
+  --color-text: #262626;
+  --color-muted: #908a85;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-whatsapp: #39b54a;
+  --color-overlay: rgba(45, 36, 24, 0.45);
+
+  /* Semantic aliases */
+  --color-primary: var(--color-terracotta);
+  --color-primary-hover: var(--color-gold);
+  --color-secondary: var(--color-gold);
+  --color-bg: var(--color-white);
+  --color-bg-alt: var(--color-cream-soft);
+  --color-bg-dark: var(--color-dark);
+  --color-heading: var(--color-dark);
+  --color-body: var(--color-text);
+  --color-label: var(--color-gold);
+  --color-border: rgba(144, 138, 133, 0.22);
+  --color-header-bg: var(--color-terracotta);
+  --color-footer-bg: var(--color-dark);
+
+  /* ── Typography ── */
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: "Montserrat", sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  --fs-label: 0.75rem;
+  --fs-small: 0.875rem;
+  --fs-body: 1rem;
+  --fs-button: 0.95rem;
+  --fs-lead: 1.125rem;
+  --fs-h3: clamp(1.25rem, 2.5vw, 1.5rem);
+  --fs-h2: clamp(1.85rem, 4vw, 2.75rem);
+  --fs-h1: clamp(2.25rem, 5vw, 3.5rem);
+  --fs-hero: clamp(2.5rem, 6vw, 3.75rem);
+
+  --lh-tight: 1.2;
+  --lh-snug: 1.35;
+  --lh-body: 1.7;
+  --ls-label: 0.35em;
+  --ls-nav: 0.08em;
+
+  /* ── Layout ── */
+  --max-width: 1120px;
+  --max-width-wide: 1280px;
+  --max-width-narrow: 800px;
+  --container-pad: 1.25rem;
+  --section-pad-y: 4.5rem;
+  --section-pad-y-sm: 3rem;
+  --header-height: 80px;
+  --header-height-mobile: 64px;
+
+  /* ── Spacing scale ── */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+
+  /* ── Radii ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 28px rgba(0, 0, 0, 0.28);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.2);
+
+  /* ── Motion ── */
+  --transition-fast: 0.15s ease;
+  --transition: 0.25s ease;
+  --transition-slow: 0.4s ease;
+
+  /* ── Z-index ── */
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-header: 200;
+  --z-dropdown: 300;
+  --z-overlay: 400;
+  --z-modal: 500;
+  --z-fab: 600;
+  --z-toast: 700;
+
+  /* ── FAB / Lead bar ── */
+  --fab-size: 56px;
+  --fab-gap: 0.75rem;
+
+  /* ── Breakpoints (reference only — use in @media) ── */
+  /* --bp-sm: 480px; --bp-md: 768px; --bp-lg: 1024px; --bp-xl: 1280px; */
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0.01ms;
+    --transition: 0.01ms;
+    --transition-slow: 0.01ms;
+  }
+}

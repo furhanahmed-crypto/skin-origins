@@ -1,0 +1,413 @@
+{
+  "source_site": "https://skinoriginsclinic.com/",
+  "total_files": 78,
+  "total_bytes": 110997101,
+  "folders": [
+    "about",
+    "clinic",
+    "doctor",
+    "home",
+    "home/before-after",
+    "home/hero",
+    "home/instagram",
+    "home/services",
+    "home/videos",
+    "icons",
+    "logo",
+    "services/hair",
+    "services/skin",
+    "services/wellness"
+  ],
+  "files": [
+    {
+      "local": "about/drsuvidha.webp",
+      "bytes": 177098,
+      "source": null
+    },
+    {
+      "local": "about/relaxingspa.webp",
+      "bytes": 62122,
+      "source": null
+    },
+    {
+      "local": "clinic/Treatment-Room-1.webp",
+      "bytes": 77432,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/Treatment-Room-1.webp"
+    },
+    {
+      "local": "clinic/award1-scaled.webp",
+      "bytes": 276828,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/award1-scaled.webp"
+    },
+    {
+      "local": "clinic/award1.webp",
+      "bytes": 253884,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/award1-scaled.webp"
+    },
+    {
+      "local": "clinic/leaser.webp",
+      "bytes": 125520,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/leaser.webp"
+    },
+    {
+      "local": "clinic/relaxingspa.webp",
+      "bytes": 62122,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/relaxingspa.webp"
+    },
+    {
+      "local": "doctor/ChatGPT-Image-Jun-21-2026-08_00_34-PM.png",
+      "bytes": 1547204,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/ChatGPT-Image-Jun-21-2026-08_00_34-PM.png"
+    },
+    {
+      "local": "doctor/drsuvidha-scaled.webp",
+      "bytes": 188150,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/drsuvidha-scaled.webp"
+    },
+    {
+      "local": "doctor/drsuvidha.webp",
+      "bytes": 177098,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/drsuvidha-scaled.webp"
+    },
+    {
+      "local": "home/SOG_Dr-Pic-Horizantal.jpg",
+      "bytes": 395914,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/07/SOG_Dr-Pic-Horizantal.jpg"
+    },
+    {
+      "local": "home/before-after/treatment1-after.jpeg",
+      "bytes": 34683,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/treatment1-after.jpeg"
+    },
+    {
+      "local": "home/before-after/treatment1-before.jpeg",
+      "bytes": 105894,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/treatment1-before.jpeg"
+    },
+    {
+      "local": "home/before-after/treatment2-after.jpg",
+      "bytes": 109572,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/treatment2-after.jpg"
+    },
+    {
+      "local": "home/before-after/treatment2-before.jpg",
+      "bytes": 107156,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/treatment2-before.jpg"
+    },
+    {
+      "local": "home/before-after/treatment3-after-scaled.jpg",
+      "bytes": 499269,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/treatment3-after-scaled.jpg"
+    },
+    {
+      "local": "home/before-after/treatment3-after.jpg",
+      "bytes": 1560673,
+      "source": null
+    },
+    {
+      "local": "home/before-after/treatment3-before-scaled.jpg",
+      "bytes": 533444,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/treatment3-before-scaled.jpg"
+    },
+    {
+      "local": "home/before-after/treatment3-before.jpg",
+      "bytes": 1086717,
+      "source": null
+    },
+    {
+      "local": "home/hero/cosmetic-treatment-scaled.jpg",
+      "bytes": 309479,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/cosmetic-treatment-scaled.jpg"
+    },
+    {
+      "local": "home/hero/cosmetic-treatment.jpg",
+      "bytes": 25621167,
+      "source": null
+    },
+    {
+      "local": "home/hero/hair-scalp-scaled.jpeg",
+      "bytes": 410857,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/hair-scalp-scaled.jpeg"
+    },
+    {
+      "local": "home/hero/hair-scalp.jpeg",
+      "bytes": 7172622,
+      "source": null
+    },
+    {
+      "local": "home/hero/hydrafacial-procedure-scaled.jpeg",
+      "bytes": 339871,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/hydrafacial-procedure-scaled.jpeg"
+    },
+    {
+      "local": "home/hero/hydrafacial-procedure.jpeg",
+      "bytes": 9263919,
+      "source": null
+    },
+    {
+      "local": "home/hero/skin-rejuvenation-2-scaled.webp",
+      "bytes": 171212,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/skin-rejuvenation-2-scaled.webp"
+    },
+    {
+      "local": "home/hero/skin-rejuvenation-2.webp",
+      "bytes": 264752,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/skin-rejuvenation-2-scaled.webp"
+    },
+    {
+      "local": "home/instagram/649229759_18056358074466259_7252309520901238065_n.jpg",
+      "bytes": 106164,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/649229759_18056358074466259_7252309520901238065_n.jpg"
+    },
+    {
+      "local": "home/instagram/649233020_18048762209714899_3739331039554268412_n.jpg",
+      "bytes": 119254,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/649233020_18048762209714899_3739331039554268412_n.jpg"
+    },
+    {
+      "local": "home/instagram/651025465_920420727376895_5892817824303860401_n.jpg",
+      "bytes": 36256,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/651025465_920420727376895_5892817824303860401_n.jpg"
+    },
+    {
+      "local": "home/instagram/658826838_1976232863101190_6905602130141125180_n.jpg",
+      "bytes": 49153,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/658826838_1976232863101190_6905602130141125180_n.jpg"
+    },
+    {
+      "local": "home/services/0abcc0a675601611e331babf91ab2725.webp",
+      "bytes": 15498,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/0abcc0a675601611e331babf91ab2725.webp"
+    },
+    {
+      "local": "home/services/158fb045ebc528a0adbbeed6ec6e036f.webp",
+      "bytes": 21998,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/158fb045ebc528a0adbbeed6ec6e036f.webp"
+    },
+    {
+      "local": "home/services/1d88cd4b5f1d12539abee7603b680d42.webp",
+      "bytes": 29152,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/1d88cd4b5f1d12539abee7603b680d42.webp"
+    },
+    {
+      "local": "home/services/1e52c7f615cde5a7e95b0d7d10ae19ef.webp",
+      "bytes": 23528,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/1e52c7f615cde5a7e95b0d7d10ae19ef.webp"
+    },
+    {
+      "local": "home/services/2f4960ceb45303360ce15317e83fe873-1.webp",
+      "bytes": 19204,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/2f4960ceb45303360ce15317e83fe873-1.webp"
+    },
+    {
+      "local": "home/services/31ca21cddb6f0e8a82b6eff6e55692cb.webp",
+      "bytes": 28120,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/31ca21cddb6f0e8a82b6eff6e55692cb.webp"
+    },
+    {
+      "local": "home/services/36a8c33e508dcc6871586a259ab4f60e.webp",
+      "bytes": 18134,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/36a8c33e508dcc6871586a259ab4f60e.webp"
+    },
+    {
+      "local": "home/services/61cfddb308f2364be60bbb4505bb4a71-1.webp",
+      "bytes": 14894,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/61cfddb308f2364be60bbb4505bb4a71-1.webp"
+    },
+    {
+      "local": "home/services/61cfddb308f2364be60bbb4505bb4a71.webp",
+      "bytes": 14894,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/61cfddb308f2364be60bbb4505bb4a71.webp"
+    },
+    {
+      "local": "home/services/6f07f7c16c88f632eeb970faaea7ce39.webp",
+      "bytes": 37246,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/6f07f7c16c88f632eeb970faaea7ce39.webp"
+    },
+    {
+      "local": "home/services/746f59ce7410ab5256f9fb7b0b572345.webp",
+      "bytes": 21464,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/746f59ce7410ab5256f9fb7b0b572345.webp"
+    },
+    {
+      "local": "home/services/830d47c9fd03a5bd65cb24a2e5ee5f95.webp",
+      "bytes": 17750,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/830d47c9fd03a5bd65cb24a2e5ee5f95.webp"
+    },
+    {
+      "local": "home/services/8b427e67264ab82b70a1f3a060e94011.webp",
+      "bytes": 27748,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/8b427e67264ab82b70a1f3a060e94011.webp"
+    },
+    {
+      "local": "home/services/909d07424f73abb9d0460145b67a3c19.webp",
+      "bytes": 39092,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/909d07424f73abb9d0460145b67a3c19.webp"
+    },
+    {
+      "local": "home/services/9471623ff7fec06c73efe2188cf1cac4.webp",
+      "bytes": 31282,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/9471623ff7fec06c73efe2188cf1cac4.webp"
+    },
+    {
+      "local": "home/services/9486588c42e2fc1a1030aca909d737a1.webp",
+      "bytes": 17706,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/9486588c42e2fc1a1030aca909d737a1.webp"
+    },
+    {
+      "local": "home/services/a1d304148eb17e3eca91d66547329125.webp",
+      "bytes": 14670,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/a1d304148eb17e3eca91d66547329125.webp"
+    },
+    {
+      "local": "home/services/c73dd76e68c007c8b7ffe6fad9123184.webp",
+      "bytes": 37482,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/c73dd76e68c007c8b7ffe6fad9123184.webp"
+    },
+    {
+      "local": "home/services/d74b25d78e39fea30955e81d393cdeb9.webp",
+      "bytes": 26124,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/d74b25d78e39fea30955e81d393cdeb9.webp"
+    },
+    {
+      "local": "home/services/d7b61ffc2b95242925f60a880acb8c30.webp",
+      "bytes": 16358,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/d7b61ffc2b95242925f60a880acb8c30.webp"
+    },
+    {
+      "local": "home/services/e5c07f903cf93c1cd67d6c3032eaf5e6.webp",
+      "bytes": 18886,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/e5c07f903cf93c1cd67d6c3032eaf5e6.webp"
+    },
+    {
+      "local": "home/services/ea66947420783f46c076f589cd0cf75a.webp",
+      "bytes": 12544,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/ea66947420783f46c076f589cd0cf75a.webp"
+    },
+    {
+      "local": "home/videos/AQMFRW-lbSD1lTYvx17lNy65876iyC16YHD11UKpIYHOz2uvEakhUISWB3rhRsYZvByf5jjsbECHQS2I_nNEgvMM.mp4",
+      "bytes": 3659113,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/AQMFRW-lbSD1lTYvx17lNy65876iyC16YHD11UKpIYHOz2uvEakhUISWB3rhRsYZvByf5jjsbECHQS2I_nNEgvMM.mp4"
+    },
+    {
+      "local": "home/videos/AQOfPgu-jOsS1NUIxFYg59ClL_GKncP8F72-ZONY6o7n7_XUGfLLj4UZRa0mR7kM5Z2Luw2LhyMj7YIb2PTpHIbuCGmaO2PjcWQot8A.mp4",
+      "bytes": 2644987,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/AQOfPgu-jOsS1NUIxFYg59ClL_GKncP8F72-ZONY6o7n7_XUGfLLj4UZRa0mR7kM5Z2Luw2LhyMj7YIb2PTpHIbuCGmaO2PjcWQot8A.mp4"
+    },
+    {
+      "local": "home/videos/AQPMjS2T5oLadCUwTraD6lZxaNkfeeZo2yMmAsu7uTnvKol2MWO05OeOGneWHkYsbXe1ufr3Bw4GJeyCFYiB7k6N.mp4",
+      "bytes": 5197983,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/AQPMjS2T5oLadCUwTraD6lZxaNkfeeZo2yMmAsu7uTnvKol2MWO05OeOGneWHkYsbXe1ufr3Bw4GJeyCFYiB7k6N.mp4"
+    },
+    {
+      "local": "home/videos/AQPSkfEU9ReC75W6O3K8MKEIbmeX4ebvbPvfA_pDBi47NOyn4mLrjuecsVO9FjUz6DHRSl3cXKW56MT7jOzUztBb.mp4",
+      "bytes": 3015371,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/AQPSkfEU9ReC75W6O3K8MKEIbmeX4ebvbPvfA_pDBi47NOyn4mLrjuecsVO9FjUz6DHRSl3cXKW56MT7jOzUztBb.mp4"
+    },
+    {
+      "local": "icons/Screenshot-2026-06-11-175425.png",
+      "bytes": 4412,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/Screenshot-2026-06-11-175425.png"
+    },
+    {
+      "local": "icons/Screenshot-2026-06-11-175438.png",
+      "bytes": 3630,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/Screenshot-2026-06-11-175438.png"
+    },
+    {
+      "local": "icons/Screenshot-2026-06-11-175451.png",
+      "bytes": 3313,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/Screenshot-2026-06-11-175451.png"
+    },
+    {
+      "local": "icons/Screenshot-2026-06-11-175503.png",
+      "bytes": 3112,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/Screenshot-2026-06-11-175503.png"
+    },
+    {
+      "local": "icons/Screenshot_2026-06-11_130535-removebg-preview-2-1.png",
+      "bytes": 4274,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/Screenshot_2026-06-11_130535-removebg-preview-2-1.png"
+    },
+    {
+      "local": "icons/Screenshot_2026-06-11_130608-removebg-preview.jpg",
+      "bytes": 2170,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/Screenshot_2026-06-11_130608-removebg-preview.jpg"
+    },
+    {
+      "local": "icons/Screenshot_2026-06-11_130618-removebg-preview.jpg",
+      "bytes": 2490,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/Screenshot_2026-06-11_130618-removebg-preview.jpg"
+    },
+    {
+      "local": "icons/Screenshot_2026-06-11_130629-removebg-preview.jpg",
+      "bytes": 2787,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/Screenshot_2026-06-11_130629-removebg-preview.jpg"
+    },
+    {
+      "local": "icons/Screenshot_2026-06-11_130642-removebg-preview.jpg",
+      "bytes": 1873,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/Screenshot_2026-06-11_130642-removebg-preview.jpg"
+    },
+    {
+      "local": "logo/logo.svg",
+      "bytes": 24311,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/logo.svg"
+    },
+    {
+      "local": "logo/skinorigin.webp",
+      "bytes": 54564,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/skinorigin.webp"
+    },
+    {
+      "local": "services/hair/hair-scalp-scaled.jpeg",
+      "bytes": 410857,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/hair-scalp-scaled.jpeg"
+    },
+    {
+      "local": "services/hair/hair-scalp.jpeg",
+      "bytes": 7172622,
+      "source": null
+    },
+    {
+      "local": "services/skin/cosmetic-treatment-scaled.jpg",
+      "bytes": 309479,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/cosmetic-treatment-scaled.jpg"
+    },
+    {
+      "local": "services/skin/cosmetic-treatment.jpg",
+      "bytes": 25621167,
+      "source": null
+    },
+    {
+      "local": "services/skin/hydrafacial-procedure-scaled.jpeg",
+      "bytes": 339871,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/hydrafacial-procedure-scaled.jpeg"
+    },
+    {
+      "local": "services/skin/hydrafacial-procedure.jpeg",
+      "bytes": 9263919,
+      "source": null
+    },
+    {
+      "local": "services/skin/skin-rejuvenation-2-scaled.webp",
+      "bytes": 171212,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/skin-rejuvenation-2-scaled.webp"
+    },
+    {
+      "local": "services/skin/skin-rejuvenation-2.webp",
+      "bytes": 264752,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/skin-rejuvenation-2-scaled.webp"
+    },
+    {
+      "local": "services/wellness/woman-wellness-center-skin-treatment-scaled.jpg",
+      "bytes": 237215,
+      "source": "https://skinoriginsclinic.com/wp-content/uploads/2026/06/woman-wellness-center-skin-treatment-scaled.jpg"
+    },
+    {
+      "local": "services/wellness/woman-wellness-center-skin-treatment.jpg",
+      "bytes": 832357,
+      "source": null
+    }
+  ]
+}
