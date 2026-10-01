@@ -16,7 +16,7 @@ return [
         'best treatment for melasma on Indian skin',
     ],
     'excerpt' => 'Brown or greyish patches on the cheeks, forehead, upper lip or nose that seem to…',
-    'image' => 'images/services/skin/melasma-treatment.png',
+    'image' => 'images/services/skin/melasma-treatment.jpg',
     'image_alt' => 'Melasma and pigmentation treatment at Skin Origins, Jubilee Hills, Hyderabad',
     'service' => [
         'href' => '/skin/cosmelan-peel/',

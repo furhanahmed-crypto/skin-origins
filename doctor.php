@@ -105,7 +105,7 @@ require SO_INCLUDES . '/header.php';
         </div>
         <div class="split__media">
             <img
-                src="<?= so_e(so_asset('images/doctor/ChatGPT-Image-Jun-21-2026-08_00_34-PM.png')) ?>"
+                src="<?= so_e(so_asset('images/doctor/ChatGPT-Image-Jun-21-2026-08_00_34-PM.jpg')) ?>"
                 alt="Dr. Suvidha Reddy"
                 width="800"
                 height="1000"

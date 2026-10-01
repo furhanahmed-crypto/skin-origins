@@ -23,7 +23,7 @@ return array(
     'meta_title' => 'Melasma Treatment in Hyderabad | Dermatologist, Jubilee Hills',
     'meta_description' => 'Why melasma returns, which treatments work on Indian skin, and how to control it long term. Expert melasma care at Skin Origins, Jubilee Hills, Hyderabad.',
     'excerpt' => 'Brown or greyish patches on the cheeks, forehead, upper lip or nose that seem to…',
-    'image' => 'images/services/skin/melasma-treatment.png',
+    'image' => 'images/services/skin/melasma-treatment.jpg',
     'image_alt' => 'Melasma and pigmentation treatment at Skin Origins, Jubilee Hills, Hyderabad',
     'published' => '2026-09-29',
     'primary_keyword' => 'melasma treatment in Hyderabad',
