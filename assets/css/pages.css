@@ -1402,15 +1402,42 @@
 
 .blog-article__content > ul {
   margin: 0 0 1.25rem;
-  padding-left: 1.2rem;
-  display: grid;
-  gap: 0.55rem;
+  padding-left: 1.35rem;
+  list-style: disc;
+  list-style-position: outside;
 }
 
 .blog-article__content > ul li {
   color: var(--color-olive);
   font-size: 1.02rem;
   line-height: 1.65;
+  list-style: disc;
+  display: list-item;
+  margin: 0 0 0.55rem;
+}
+
+.blog-article__content > ul li:last-child {
+  margin-bottom: 0;
+}
+
+.blog-article__content > ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.35rem;
+  list-style: decimal;
+  list-style-position: outside;
+}
+
+.blog-article__content > ol li {
+  color: var(--color-olive);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  list-style: decimal;
+  display: list-item;
+  margin: 0 0 0.55rem;
+}
+
+.blog-article__content > ol li:last-child {
+  margin-bottom: 0;
 }
 
 .blog-table-wrap {
