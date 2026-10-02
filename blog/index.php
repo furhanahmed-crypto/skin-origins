@@ -131,7 +131,7 @@ require SO_INCLUDES . '/header.php';
                                     </button>
                                     <div class="faq-answer" id="blog-faq-a-<?= (int) $i ?>" role="region" aria-labelledby="blog-faq-q-<?= (int) $i ?>">
                                         <div class="faq-answer__inner">
-                                            <p><?= so_e($faq['a']) ?></p>
+                                            <p><?= so_blog_rich_text((string) ($faq['a'] ?? ''), is_array($faq['links'] ?? null) ? $faq['links'] : []) ?></p>
                                         </div>
                                     </div>
                                 </div>

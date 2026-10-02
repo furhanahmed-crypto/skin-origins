@@ -26,109 +26,6 @@ return array (
   'published' => '2026-09-29',
   'author' => 'Dr. Suvidha Reddy',
   'author_credentials' => 'MBBS, MD (Dermatology)',
-  'blocks' => 
-  array (
-    0 => 
-    array (
-      'type' => 'p',
-      'text' => 'A name you\'d rather forget, a design that no longer feels like you, a tattoo that affects a',
-    ),
-    1 => 
-    array (
-      'type' => 'p',
-      'text' => 'job application or a wedding look — whatever the reason, you are not alone. Laser tattoo',
-    ),
-    2 => 
-    array (
-      'type' => 'p',
-      'text' => 'removal is now safe and predictable when done by a trained medical team. Here is what',
-    ),
-    3 => 
-    array (
-      'type' => 'p',
-      'text' => 'the process involves at Skin Origins, Jubilee Hills.',
-    ),
-    4 => 
-    array (
-      'type' => 'p',
-      'text' => 'Tattoo ink sits in the dermis as particles too large for your body to clear. The laser delivers',
-    ),
-    5 => 
-    array (
-      'type' => 'p',
-      'text' => 'ultra-short pulses of energy that shatter these particles into tiny fragments. Your immune',
-    ),
-    6 => 
-    array (
-      'type' => 'p',
-      'text' => 'system then gradually carries the fragments away over the following weeks. Each session',
-    ),
-    7 => 
-    array (
-      'type' => 'p',
-      'text' => 'breaks down more ink, so the tattoo fades in stages.',
-    ),
-    8 => 
-    array (
-      'type' => 'p',
-      'text' => 'Most tattoos need 6 to 12 sessions, spaced 6–8 weeks apart. Your number depends on:',
-    ),
-    9 => 
-    array (
-      'type' => 'h2',
-      'text' => 'Skin Origins, Jubilee Hills, Hyderabad',
-    ),
-    10 => 
-    array (
-      'type' => 'p',
-      'text' => 'For a cover-up, you usually need fewer sessions — just enough fading for the new design to hide the old one.',
-    ),
-    11 => 
-    array (
-      'type' => 'p',
-      'text' => 'Is laser tattoo removal safe for Indian skin? Yes, when wavelengths and energy are chosen for your skin tone. Darker skin carries a risk of temporary lightening or darkening of the skin, so settings are kept conservative and sessions are spaced properly. A test patch may be done first. Choosing a dermatologist-supervised clinic matters most here.',
-    ),
-    12 => 
-    array (
-      'type' => 'p',
-      'text' => 'Does it hurt? Most people describe it as a rubber band snapping against the skin, with a warm feeling afterwards. Numbing cream and cooling reduce discomfort. Small tattoos take only a few minutes per session.',
-    ),
-    13 => 
-    array (
-      'type' => 'h2',
-      'text' => 'What to expect after each session',
-    ),
-    14 => 
-    array (
-      'type' => 'h2',
-      'text' => 'Hands, feet, ankles (less blood',
-    ),
-    15 => 
-    array (
-      'type' => 'p',
-      'text' => 'flow) Health habits Non-smoker, active lifestyle Smoking slows clearance Time Normal reaction Immediately White "frosting" over the ink that fades in 20–30 minutes; redness and swelling 1–3 days Mild blistering or pinpoint bleeding in some cases 3–14 days Scabbing or crusting; itching as it heals 4–8 weeks Ink continues to fade as your body clears it Aftercare checklist Keep the area clean and apply the prescribed ointment with a light dressing for the first few days Don\'t pop blisters or pick scabs — this can scar Avoid swimming pools, saunas and hot tubs until healed Protect the area from sun with clothing, then sunscreen once healed Wear loose clothing over the area in Hyderabad\'s heat Contact the clinic if you notice increasing pain, pus or fever Can every tattoo be removed completely? Many tattoos fade completely or almost completely. Some colours and very dense professional tattoos may leave a faint shadow. Your dermatologist will give you an honest estimate after examining the tattoo.',
-    ),
-    16 => 
-    array (
-      'type' => 'p',
-      'text' => 'What affects tattoo removal cost in Hyderabad? Size of the tattoo (usually priced per square inch or size band)',
-    ),
-    17 => 
-    array (
-      'type' => 'h2',
-      'text' => 'Ink colours and density',
-    ),
-    18 => 
-    array (
-      'type' => 'h2',
-      'text' => 'Number of sessions needed',
-    ),
-    19 => 
-    array (
-      'type' => 'p',
-      'text' => 'Laser technology used and medical supervision Why choose Skin Origins for tattoo removal Assessment by board-certified dermatologists before any laser US-FDA approved laser technology with settings for Indian skin Realistic session estimates and transparent planning Strict hygiene and wound-care support between sessions Convenient Jubilee Hills location for clients across west Hyderabad Related: Semi-Permanent Makeup in Hyderabad · Service: Tattoo Removal',
-    ),
-  ),
   'faqs' => 
   array (
     0 => 
@@ -154,8 +51,202 @@ return array (
     4 => 
     array (
       'q' => 'Can eyebrow or lip-liner micropigmentation be removed?',
-      'a' => 'Often yes, but it needs special care near the eyes and lips. Discuss it at consultation. Book a tattoo removal consultation Visit Skin Origins at Skin Origins Plot No - 245, Road Number 78, Phase 3, Jubilee Hills, Hyderabad, 500034, Jubilee Hills, Hyderabad, or call +91 90006 00177 / WhatsApp https://wa.me/919000600177. /contact.php',
+      'a' => 'Often yes, but it needs special care near the eyes and lips. Discuss it at consultation.',
     ),
   ),
   'disclaimer' => 'This article is for general information and does not replace a consultation. Treatment suitability and results vary from person to person. Please consult a qualified dermatologist before starting any treatment.',
+  'blocks' => 
+  array (
+    0 => 
+    array (
+      'type' => 'p',
+      'text' => 'A name you\'d rather forget, a design that no longer feels like you, a tattoo that affects a job application or a wedding look — whatever the reason, you are not alone. Laser tattoo removal is now safe and predictable when done by a trained medical team. Here is what the process involves at Skin Origins, Jubilee Hills.',
+    ),
+    1 => 
+    array (
+      'type' => 'h2',
+      'text' => 'How does laser tattoo removal work?',
+    ),
+    2 => 
+    array (
+      'type' => 'p',
+      'text' => 'Tattoo ink sits in the dermis as particles too large for your body to clear. The laser delivers ultra-short pulses of energy that shatter these particles into tiny fragments. Your immune system then gradually carries the fragments away over the following weeks. Each session breaks down more ink, so the tattoo fades in stages.',
+    ),
+    3 => 
+    array (
+      'type' => 'h2',
+      'text' => 'How many sessions will you need?',
+    ),
+    4 => 
+    array (
+      'type' => 'p',
+      'text' => 'Most tattoos need 6 to 12 sessions, spaced 6–8 weeks apart. Your number depends on ink colour, density, age of the tattoo, location on the body and your overall health.',
+    ),
+    5 => 
+    array (
+      'type' => 'table',
+      'headers' => 
+      array (
+        0 => 'Factor',
+        1 => 'Fades faster',
+        2 => 'Needs more sessions',
+      ),
+      'rows' => 
+      array (
+        0 => 
+        array (
+          0 => 'Ink colour',
+          1 => 'Black, dark blue',
+          2 => 'Green, light blue, yellow, white',
+        ),
+        1 => 
+        array (
+          0 => 'Tattoo type',
+          1 => 'Amateur or home-done',
+          2 => 'Professional, densely layered',
+        ),
+        2 => 
+        array (
+          0 => 'Age of tattoo',
+          1 => 'Older tattoos',
+          2 => 'Newer tattoos',
+        ),
+        3 => 
+        array (
+          0 => 'Location',
+          1 => 'Close to the heart (chest, neck, arms)',
+          2 => 'Hands, feet, ankles (less blood flow)',
+        ),
+        4 => 
+        array (
+          0 => 'Health habits',
+          1 => 'Non-smoker, active lifestyle',
+          2 => 'Smoking slows clearance',
+        ),
+      ),
+    ),
+    6 => 
+    array (
+      'type' => 'p',
+      'text' => 'For a cover-up, you usually need fewer sessions — just enough fading for the new design to hide the old one.',
+    ),
+    7 => 
+    array (
+      'type' => 'h2',
+      'text' => 'Is laser tattoo removal safe for Indian skin?',
+    ),
+    8 => 
+    array (
+      'type' => 'p',
+      'text' => 'Yes, when wavelengths and energy are chosen for your skin tone. Darker skin carries a risk of temporary lightening or darkening of the skin, so settings are kept conservative and sessions are spaced properly. A test patch may be done first. Choosing a dermatologist-supervised clinic matters most here.',
+    ),
+    9 => 
+    array (
+      'type' => 'h2',
+      'text' => 'Does it hurt?',
+    ),
+    10 => 
+    array (
+      'type' => 'p',
+      'text' => 'Most people describe it as a rubber band snapping against the skin, with a warm feeling afterwards. Numbing cream and cooling reduce discomfort. Small tattoos take only a few minutes per session.',
+    ),
+    11 => 
+    array (
+      'type' => 'h2',
+      'text' => 'What to expect after each session',
+    ),
+    12 => 
+    array (
+      'type' => 'table',
+      'headers' => 
+      array (
+        0 => 'Time',
+        1 => 'Normal reaction',
+      ),
+      'rows' => 
+      array (
+        0 => 
+        array (
+          0 => 'Immediately',
+          1 => 'White "frosting" over the ink that fades in 20–30 minutes; redness and swelling',
+        ),
+        1 => 
+        array (
+          0 => '1–3 days',
+          1 => 'Mild blistering or pinpoint bleeding in some cases',
+        ),
+        2 => 
+        array (
+          0 => '3–14 days',
+          1 => 'Scabbing or crusting; itching as it heals',
+        ),
+        3 => 
+        array (
+          0 => '4–8 weeks',
+          1 => 'Ink continues to fade as your body clears it',
+        ),
+      ),
+    ),
+    13 => 
+    array (
+      'type' => 'h2',
+      'text' => 'Aftercare checklist',
+    ),
+    14 => 
+    array (
+      'type' => 'ul',
+      'items' => 
+      array (
+        0 => 'Keep the area clean and apply the prescribed ointment with a light dressing for the first few days',
+        1 => 'Don\'t pop blisters or pick scabs — this can scar',
+        2 => 'Avoid swimming pools, saunas and hot tubs until healed',
+        3 => 'Protect the area from sun with clothing, then sunscreen once healed',
+        4 => 'Wear loose clothing over the area in Hyderabad\'s heat',
+        5 => 'Contact the clinic if you notice increasing pain, pus or fever',
+      ),
+    ),
+    15 => 
+    array (
+      'type' => 'h2',
+      'text' => 'Can every tattoo be removed completely?',
+    ),
+    16 => 
+    array (
+      'type' => 'p',
+      'text' => 'Many tattoos fade completely or almost completely. Some colours and very dense professional tattoos may leave a faint shadow. Your dermatologist will give you an honest estimate after examining the tattoo.',
+    ),
+    17 => 
+    array (
+      'type' => 'h2',
+      'text' => 'What affects tattoo removal cost in Hyderabad?',
+    ),
+    18 => 
+    array (
+      'type' => 'ul',
+      'items' => 
+      array (
+        0 => 'Size of the tattoo (usually priced per square inch or size band)',
+        1 => 'Ink colours and density',
+        2 => 'Number of sessions needed',
+        3 => 'Laser technology used and medical supervision',
+      ),
+    ),
+    19 => 
+    array (
+      'type' => 'h2',
+      'text' => 'Why choose Skin Origins for tattoo removal',
+    ),
+    20 => 
+    array (
+      'type' => 'ul',
+      'items' => 
+      array (
+        0 => 'Assessment by board-certified dermatologists before any laser',
+        1 => 'US-FDA approved laser technology with settings for Indian skin',
+        2 => 'Realistic session estimates and transparent planning',
+        3 => 'Strict hygiene and wound-care support between sessions',
+        4 => 'Convenient Jubilee Hills location for clients across west Hyderabad',
+      ),
+    ),
+  ),
 );
