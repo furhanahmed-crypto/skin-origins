@@ -705,7 +705,7 @@
 
 .service-page {
   background: var(--color-cream-soft);
-  padding: clamp(1.5rem, 4vw, 2.75rem) 0 clamp(2.5rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 4vw, 2.75rem) 0 clamp(1.25rem, 3vw, 2rem);
 }
 
 .service-page__tabs-wrap {
@@ -1100,6 +1100,10 @@
 }
 
 /* Why choose */
+.why-service.page-section {
+  padding-top: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
 .why-service__intro {
   text-align: center;
   margin-bottom: 2.25rem;
@@ -1352,6 +1356,37 @@
 @media (max-width: 991px) {
   .service-page .treatment-item {
     width: calc(33.333% - 1rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .service-page {
+    padding-top: 0.85rem;
+  }
+
+  .service-page .service-tabs.tabs {
+    margin-bottom: 0.75rem;
+  }
+
+  /* home.css applies .treatment-wrapper { padding: 60px 20px } — strip on service pages */
+  .service-page .treatment-wrapper {
+    background: transparent;
+    padding: 0;
+  }
+
+  .service-page .detail-layout,
+  .service-page .detail-layout.detail-layout--seo {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  /* home.css #backBtn { display: inline-block } wins over class alone */
+  .service-page #backBtn,
+  .service-page .service-detail__back {
+    display: none !important;
   }
 }
 
