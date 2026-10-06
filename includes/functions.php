@@ -113,3 +113,51 @@ function so_page_title(?string $title = null): string
 
     return $title . ' - skinoriginsclinic';
 }
+
+/**
+ * Load SEO detail content for a treatment page (/skin|hair|wellness/{slug}/).
+ *
+ * @return array<string, mixed>|null
+ */
+function so_service_detail(string $category, string $slug): ?array
+{
+    $category = preg_replace('/[^a-z]/', '', strtolower($category)) ?? '';
+    $slug = preg_replace('/[^a-z0-9\-]/', '', strtolower($slug)) ?? '';
+
+    if ($category === '' || $slug === '') {
+        return null;
+    }
+
+    $file = SO_INCLUDES . '/data/services/details/' . $category . '/' . $slug . '.php';
+    if (!is_file($file)) {
+        return null;
+    }
+
+    $data = require $file;
+    return is_array($data) ? $data : null;
+}
+
+/**
+ * Escape SEO copy and turn Label/path/ internal-link markers into anchors.
+ */
+function so_seo_rich_text(string $text): string
+{
+    $pattern = '/([A-Za-z][A-Za-z0-9 &+\'’\-]{0,60}?)(\s*)(\/(?:skin|hair|wellness)\/[a-z0-9\-]+\/)/u';
+    $out = '';
+    $offset = 0;
+
+    if (preg_match_all($pattern, $text, $matches, PREG_OFFSET_CAPTURE)) {
+        foreach ($matches[0] as $i => $full) {
+            $start = $full[1];
+            $out .= so_e(substr($text, $offset, $start - $offset));
+            $label = rtrim($matches[1][$i][0]);
+            $path = $matches[3][$i][0];
+            $out .= '<a class="service-seo__link" href="' . so_e(so_url($path)) . '">' . so_e($label) . '</a>';
+            $offset = $start + strlen($full[0]);
+        }
+    }
+
+    $out .= so_e(substr($text, $offset));
+
+    return $out;
+}

@@ -1,5 +1,6 @@
 /**
  * Skin Origins — Service category pages (Skin / Hair / Wellness)
+ * Full page navigation keeps per-treatment SEO meta/H1/FAQs intact.
  */
 (function () {
   'use strict';
@@ -9,12 +10,6 @@
   }
   function qsa(sel, root) {
     return Array.prototype.slice.call((root || document).querySelectorAll(sel));
-  }
-
-  function asset(path, base) {
-    if (!path) return '';
-    if (path.indexOf('http') === 0 || path.charAt(0) === '/') return path;
-    return String(base || '/assets').replace(/\/$/, '') + '/' + path.replace(/^\//, '');
   }
 
   function initFaq() {
@@ -44,117 +39,55 @@
     });
   }
 
-  function initServiceTreatments() {
-    var cfg = window.SO_SERVICE;
-    var root = qs('[data-service-page]');
-    if (!cfg || !root) return;
+  function initSeoExpand() {
+    var btn = qs('[data-seo-expand]');
+    var more = qs('[data-seo-more]');
+    if (!btn || !more) return;
 
-    var type = cfg.type;
-    var treatments = cfg.treatments || [];
-    var base = cfg.assetBase || '/assets';
-    var wrapper = qs('#treatment-wrapper-' + type, root) || qs('.treatment-wrapper', root);
-    if (!wrapper) return;
+    var label = qs('[data-seo-expand-label]', btn);
 
-    var gridView = qs('#gridView', wrapper);
-    var detailView = qs('#detailView', wrapper);
-    if (!gridView || !detailView) return;
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      var next = !open;
 
-    function categoryUrl() {
-      return '/' + type + '/';
-    }
-
-    function treatmentUrl(slug) {
-      return '/' + type + '/' + slug + '/';
-    }
-
-    function renderMore(activeIndex) {
-      var moreGrid = qs('#moreGrid', wrapper);
-      var moreHeading = qs('#moreHeading', wrapper);
-      if (!moreGrid) return;
-      if (moreHeading) moreHeading.textContent = cfg.moreLabel || 'More Treatments';
-      moreGrid.innerHTML = '';
-
-      treatments.forEach(function (t, i) {
-        if (i === activeIndex) return;
-        var a = document.createElement('a');
-        a.className = 'more-item';
-        a.href = treatmentUrl(t.slug);
-        a.setAttribute('data-index', String(i));
-        a.setAttribute('data-slug', t.slug || '');
-        a.innerHTML =
-          '<img src="' + asset(t.image, base) + '" alt="' + t.title + '" width="96" height="96" loading="lazy" decoding="async">' +
-          '<span>' + t.title + '</span>';
-        a.addEventListener('click', function (e) {
-          e.preventDefault();
-          showDetail(i, true);
-        });
-        moreGrid.appendChild(a);
-      });
-    }
-
-    function showGrid(pushHistory) {
-      gridView.classList.remove('is-hidden');
-      detailView.classList.remove('is-visible');
-      document.title = cfg.categoryTitle || document.title;
-      if (pushHistory) {
-        history.pushState({ type: type, page: 'grid' }, '', categoryUrl());
+      if (label) {
+        label.textContent = next ? 'Show less' : 'Read more';
       }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
 
-    function showDetail(index, pushHistory) {
-      var item = treatments[index];
-      if (!item) return;
+      btn.setAttribute('aria-expanded', next ? 'true' : 'false');
+      btn.classList.toggle('is-open', next);
+      more.setAttribute('aria-hidden', next ? 'false' : 'true');
 
-      gridView.classList.add('is-hidden');
-      detailView.classList.add('is-visible');
-
-      var img = qs('#detailImg', wrapper);
-      var title = qs('#detailTitle', wrapper);
-      var desc = qs('#detailDesc', wrapper);
-      if (img) {
-        img.src = asset(item.image, base);
-        img.alt = item.title;
+      if (next) {
+        // Expand: animate height open (content is above the control).
+        more.classList.remove('is-collapsing');
+        more.classList.add('is-open');
+        return;
       }
-      if (title) title.textContent = item.title;
-      if (desc) desc.textContent = item.desc;
 
-      renderMore(index);
-      document.title = item.title + ' - Skin Origins Clinic';
+      // Collapse: instant height close + one scroll correction in the same frame
+      // so the button stays under the user's eye (no transition/scroll fighting).
+      var anchorTop = btn.getBoundingClientRect().top;
+      more.classList.add('is-collapsing');
+      more.classList.remove('is-open');
 
-      if (pushHistory) {
-        history.pushState({ type: type, slug: item.slug }, '', treatmentUrl(item.slug));
+      // Force layout so scroll correction uses the collapsed geometry.
+      void more.offsetHeight;
+
+      var delta = btn.getBoundingClientRect().top - anchorTop;
+      if (Math.abs(delta) > 0.5) {
+        window.scrollBy(0, delta);
       }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
 
-    qsa('.treatment-item', gridView).forEach(function (card) {
-      card.addEventListener('click', function (e) {
-        e.preventDefault();
-        var idx = parseInt(card.getAttribute('data-index') || '-1', 10);
-        if (idx >= 0) showDetail(idx, true);
+      // Re-enable expand animation on the next frame.
+      requestAnimationFrame(function () {
+        more.classList.remove('is-collapsing');
       });
-    });
-
-    var backBtn = qs('#backBtn', wrapper);
-    if (backBtn) {
-      backBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        showGrid(true);
-      });
-    }
-
-    window.addEventListener('popstate', function () {
-      var parts = window.location.pathname.split('/').filter(Boolean);
-      var slug = parts[1] || '';
-      var idx = treatments.findIndex(function (t) { return t.slug === slug; });
-      if (idx >= 0) showDetail(idx, false);
-      else showGrid(false);
     });
   }
 
   document.addEventListener('DOMContentLoaded', function () {
     initFaq();
-    initServiceTreatments();
+    initSeoExpand();
   });
 })();

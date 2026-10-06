@@ -17,7 +17,29 @@ $extraCss = $extraCss ?? [];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= so_e($so_document_title ?? so_page_title($pageTitle)) ?></title>
     <meta name="description" content="<?= so_e($pageDescription) ?>">
-    <link rel="icon" type="image/svg+xml" href="<?= so_e(so_asset('images/logo/logo.svg')) ?>">
+    <?php if (!empty($pageKeywords)): ?>
+    <meta name="keywords" content="<?= so_e($pageKeywords) ?>">
+    <?php endif; ?>
+    <?php if (!empty($canonicalUrl)): ?>
+    <link rel="canonical" href="<?= so_e($canonicalUrl) ?>">
+    <?php endif; ?>
+    <?php if (!empty($ogTitle) || !empty($ogDescription)): ?>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Skin Origins">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:title" content="<?= so_e($ogTitle ?? ($so_document_title ?? so_page_title($pageTitle))) ?>">
+    <meta property="og:description" content="<?= so_e($ogDescription ?? $pageDescription) ?>">
+    <?php if (!empty($canonicalUrl)): ?>
+    <meta property="og:url" content="<?= so_e($canonicalUrl) ?>">
+    <?php endif; ?>
+    <?php if (!empty($ogImage)): ?>
+    <meta property="og:image" content="<?= so_e($ogImage) ?>">
+    <?php endif; ?>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= so_e($ogTitle ?? ($so_document_title ?? so_page_title($pageTitle))) ?>">
+    <meta name="twitter:description" content="<?= so_e($ogDescription ?? $pageDescription) ?>">
+    <?php endif; ?>
+    <link rel="icon" type="image/svg+xml" href="<?= so_e(so_asset('images/logo/favicon.svg')) ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">

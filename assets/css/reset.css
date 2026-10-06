@@ -49,8 +49,15 @@ select {
   color: inherit;
 }
 
-button {
+button,
+[type="button"],
+[type="submit"],
+[type="reset"],
+[role="button"] {
   cursor: pointer;
+}
+
+button {
   border: 0;
   background: none;
   padding: 0;
